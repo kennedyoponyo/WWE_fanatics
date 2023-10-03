@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WWE fanatics</title>
+</head>
+<body>
+    <section class="header" id="home">
+        <nav>
+            <a href="#"><img src="images/logo.png" alt="rivatex logo"></a>
+            <div class="navlinks">                
+                <ul>
+                    <li><a href="home.html" >Homepage</a></li>
+                    <li><a href="paperview.html" >Paperview Events</a></li>
+                    <li><a href="abt.html" title="Learn more about REAL">About Us</a></li>
+                    <li><a href="services.html"title="Know services that REAL">Services</a></li>
+                    <li><a href="contact.html" title="Reach us through...">Contact</a></li>
+                </ul>            
+            </div>
+
+            <!------------------DROP-DOWN-------------->
+            <div class="dropdown">
+                <button class="dropbtn" >MENU <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="home.html">Homepage</a>
+                <a href="paperview.html" >Paperview Events</a>
+                <a href="abt.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+           
+        </nav>
+        <div class="textbox">
+            <h1>WWE FANATICS</h1>
+            <p>Welcome To The Leading WWE Fanpage<br>in The East African Region.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+  
+<!-------------------------BUTTON----------------------------->
+
+<button onclick="topFunction()" id="myBtn" title="Go to Top"><i class="fa-solid fa-angles-up">UP</i></button>
+
+<script>
+    
+    var mybutton = document.getElementById("myBtn");
+
+     window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction(){
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+        {
+            mybutton.style.display = "block";
+        }
+        else{
+            mybutton.style.display = "none"
+        }
+    }
+    function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<!--FOOTER-->
+<footer class="footer">
+    <div class="footer-background">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="facebook.com" class="fa fa-facebook"> Facebook</a>
+                <a href="x.com" class="fa fa-twitter"> Twitter</a>
+                <a href="instagram.com" class="fa fa-instagram"> Instagram</a>
+            </div>
+        </div>
+        <div class="contacts">
+            <p class="regno">REG: COM/M/0045/2021</p>
+            <p class="name">KENNEDY OPONYO</p>
+            <p class="email"><a href="mailto:kennedy@gmail.com">kennedy@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
